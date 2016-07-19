@@ -34,7 +34,7 @@
   "main": "./lib",
   "dependencies": {
     "passport-strategy": "1.x.x",
-    "node-oauth": "git://github.com/byteshiva/node-oauth.git",
+    "oauth-custom": "git://github.com/byteshiva/node-oauth.git",
     "uid2": "0.0.x"
   },
   "devDependencies": {
