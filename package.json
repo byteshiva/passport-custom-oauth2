@@ -35,7 +35,8 @@
   "dependencies": {
     "passport-strategy": "1.x.x",
     "oauth-custom": "git://github.com/byteshiva/node-oauth-custom.git",
-    "uid2": "0.0.x"
+    "uid2": "0.0.x",
+    "snyk": "^1.25.2"
   },
   "devDependencies": {
     "make-node": "0.3.x",
@@ -47,6 +48,9 @@
     "node": ">= 0.4.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
-  }
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }

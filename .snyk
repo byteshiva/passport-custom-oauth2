@@ -1,0 +1,9 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:cli:20160615':
+    - node-oauth-custom > socksv5-custom > ipv6 > cli:
+        reason: None given
+        expires: '2017-04-09T08:00:23.656Z'
+patch: {}
